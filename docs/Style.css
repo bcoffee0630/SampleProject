@@ -1,0 +1,39 @@
+html{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    font-family: fantasy;
+    font-weight: bolder;
+    color: gray;
+}
+
+.markdown{
+    font-family: sans-serif;
+    color: red;
+    font-weight: bolder;
+    background-color: yellow;
+    text-decoration-line: underline;
+}
+
+.blueTitle{
+    font-family: sans-serif;
+    color: cornflowerblue;
+    font-weight: bolder;
+}
+
+.orangeTitle{
+    font-family: sans-serif;
+    color: coral;
+    font-weight: bolder;
+}
+
+#home{
+    background-image: url(images/background.png);
+    background-position: center;
+}
+
+#breakfast{
+    background-color: wheat;
+}

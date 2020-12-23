@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Cafe Unlimited - Home</title>
+        <link rel="stylesheet" href="Style.css">
+    </head>
+
+    <body id="home" onload="ShowTime()">
+        <!-- Page content begins here -->
+
+        <!--Banner-->
+        <p>
+            <img src="images/banner.png" alt="Cafe Unlimited - Banner">
+        </p>
+
+        <!--Navigation-->
+        <p>
+            <a href="index.html">Home</a>
+            <a href="breakfast.html">Breakfast</a>
+        </p>
+
+        <!--Font Size Button-->
+        <p>
+            <button type="button" onclick="Bigger()">Bigger</button>
+            <button type="button" onclick="Smaller()">Smaller</button>
+        </p>
+
+        <!--Breakfast Picture-->
+        <p>
+            <img src="images/pancakes.jpg" alt="Pancake">
+            <img src="images/muffin.jpg" alt="Muffin">
+        </p>
+
+        <!--Audio-->
+        <h1 class="header">Audio</h1>
+        <audio src="media/music.mp3" controls="controls">
+            Your browser does not support audio file.
+        </audio>
+
+        <!--Video-->
+        <h1 class="header">Video</h1>
+        <video src="media/breakfast.mp4" width="320" height="240" controls="controls">
+            Your browser does not support video file
+        </video>
+
+        <h1 class="header">Welcome</h1>
+
+        <p>
+            Welcome to Cafe Unlimited. We serve award-winning breakfasts and lunches, with
+            unlimited coffee, tea, and soft drinks. Freshly baked muffins, signature
+            omelets, healthy salads, delicious burgers and hearty sandwiches are just some
+            of the delicious items on our menu. We were voted the
+            <span class="markdown">
+                #1 Breakfast and Lunch restaurant downtown
+            </span>
+            !
+        </p>
+
+        <p>
+            We want to
+            <span class="markdown">
+                make you feel at home
+            </span>
+            from the minute you walk in the door. Be part of the Cafe Unlimited family! Have
+            a great meal, relax, socialize, and come back again soon!
+        </p>
+
+        <p>We offer delivery on
+            <a href="https://www.ubereats.com" target="_blank">UberEats</a>. Download the
+            app and place your order today. Please contact us about catering services.</p>
+
+        <p>We are located at 20 Channel Center Street in Boston, MA.</p>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948.8367547841485!2d-71.05369178454414!3d42.346003679187874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e37a7de82a1251%3A0xb79b53cf96e26c94!2zMjAgQ2hhbm5lbCBDZW50ZXIgU3QsIEJvc3RvbiwgTUEgMDIyMTDnvo7lnIs!5e0!3m2!1szh-TW!2stw!4v1606896071081!5m2!1szh-TW!2stw"
+            width="600"
+            height="450"
+            frameborder="0"
+            style="border:0;"
+            allowfullscreen=""
+            aria-hidden="false"
+            tabindex="0"></iframe>
+
+        <p>We are open:</p>
+
+        <ul>
+            <li>Saturday and Sunday, 7 am to 2 pm</li>
+            <li>Monday through Friday, 6 am to 2 pm</li>
+        </ul>
+
+        <p>Visit our contact page for directions and contact information.</p>
+
+        <h1 class="header">Find Us, Follow Us</h1>
+
+        <p>
+            Follow us on
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+            and
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+            . Check out our reviews on
+            <a href="https://www.Yelp.com" target="_blank">Yelp</a>.</p>
+
+        <p>Find us in Channel Center.</p>
+
+        <p>Cafe Unlimited
+        </p>
+        <p>617-555-1234
+        </p>
+        <p>cafeunlimited@example.com</p>
+
+        <!--Date-->
+        <p id="time"></p>
+
+        <!-- Page content ends here -->
+    </body>
+
+    <script>
+        function Bigger(){
+            document.getElementById("home").style.fontSize="x-large";
+        }
+        function Smaller(){
+            document.getElementById("home").style.fontSize="medium";
+        }
+        function ShowTime(){
+            var t = document.getElementById("time");
+            t.innerHTML = Date();
+        }
+    </script>
+
+</html>
